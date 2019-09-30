@@ -67,3 +67,4 @@ Question = input(" pick one question : ")
 Qnum= int(Question)
 if Qnum== 1:
   one()
+      #menu is working, can be improved
