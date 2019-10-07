@@ -4,3 +4,18 @@
 #A return should be set
       #Use define to achieve that?
 # main based on
+             print('--------Python study note---------')
+  print("Question: 1,......")
+def one():
+  temp = input("Which year is qing dynasty：")
+  guess = int(temp)
+  if guess == 1636:
+      print("right")
+      print("nice job")
+  else:
+      print("wrong")
+  print("study harder")
+Question = input(" pick one question : ")
+Qnum= int(Question)
+if Qnum== 1:
+  one()
