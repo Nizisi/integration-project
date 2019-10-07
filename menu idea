@@ -1,0 +1,6 @@
+# nested loop?
+#For certain input, out print the menu with several lines, with for loop, as example
+# user pick number, input, to pick the topic
+#A return should be set
+      #Use define to achieve that?
+# main based on
