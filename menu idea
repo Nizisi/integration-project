@@ -29,3 +29,10 @@ list1 = list(aTuple)
 print ("列表元素 : ", list1)
 
 列表元素 :  [123, 'Google', 'Runoob', 'Taobao']
+
+#list remove
+list1 = ['Google', 'Runoob', 'Taobao', 'Baidu']
+list1.remove('Taobao')
+print ("列表现在为 : ", list1)
+
+列表现在为 :  ['Google', 'Runoob', 'Baidu']
