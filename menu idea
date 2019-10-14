@@ -23,3 +23,9 @@ if Qnum== 1:
 
 #map
 map(what to do the value,value)"
+#list
+aTuple = (123, 'Google', 'Runoob', 'Taobao')
+list1 = list(aTuple)
+print ("列表元素 : ", list1)
+
+列表元素 :  [123, 'Google', 'Runoob', 'Taobao']
