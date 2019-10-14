@@ -19,3 +19,7 @@ Question = input(" pick one question : ")
 Qnum= int(Question)
 if Qnum== 1:
   one()
+
+
+#map
+map(what to do the value,value)"
