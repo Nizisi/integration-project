@@ -23,6 +23,8 @@ if Qnum== 1:
 
 #map
 map(what to do the value,value)"
+
+
 #list
 aTuple = (123, 'Google', 'Runoob', 'Taobao')
 list1 = list(aTuple)
@@ -34,5 +36,10 @@ print ("列表元素 : ", list1)
 list1 = ['Google', 'Runoob', 'Taobao', 'Baidu']
 list1.remove('Taobao')
 print ("列表现在为 : ", list1)
-
+#list 用法
 列表现在为 :  ['Google', 'Runoob', 'Baidu']
+list1 = ['Google', 'Runoob', 1997, 2000];
+list2 = [1, 2, 3, 4, 5, 6, 7 ];
+ 
+print ("list1[0]: ", list1[0])
+print ("list2[1:5]: ", list2[1:5])
