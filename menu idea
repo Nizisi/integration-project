@@ -43,3 +43,11 @@ list2 = [1, 2, 3, 4, 5, 6, 7 ];
  
 print ("list1[0]: ", list1[0])
 print ("list2[1:5]: ", list2[1:5])
+
+##return
+return use to give back value
+example, def A()
+            x=1
+            y=x+1
+            return y
+          A will be 2
