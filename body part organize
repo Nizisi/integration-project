@@ -49,4 +49,36 @@ while i:
         one()
     elif begin()==2:
         two()
+  ##################### still have problem48-50, how to avoid print first?
+  def one():
+    temp = input("Does return function return the value?")
+    guess = int(temp)
+    if guess == 1:
+        print("right")
+        print("nice job")
+    else:
+        print("wrong")
+        print("study harder")
+def two():
+    t = input("map function works as (function apply on the value, value)")
+    g=int(t)
+    if g ==1:
+        print("right")
+        print("nice job")
+    else:
+        print("wrong")
+        print("study harder")
+i = True
+while i:
+    print('--------Python study note---------')
+    print("Question: 1,2......")
+    print("YES=1, False=2")
+    p= int(input("Pick a question: "))
+    if p ==1:
+        one()
+    if p ==2:
+        two()
+  ########begin function is not able to keep, so these changes are made######################
+
+
     
