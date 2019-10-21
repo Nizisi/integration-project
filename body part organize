@@ -1,1 +1,52 @@
-
+####################
+####give def to the start of the program allows me to loop the whole program easily.############
+def begin():
+    print('--------Python study note---------')
+    print("Question: 1,......")
+    p= int(input("Pick a question: "))
+    return p
+def one():
+    temp = input("Does return function return the value?")
+    guess = int(temp)
+    if guess == 1636:
+        print("right")
+        print("nice job")
+    else:
+        print("wrong")
+        print("study harder")
+begin()
+if p == 1:
+    one()
+    ###########################not waorking, problem is on line 18, use function = 1, becareful!!!#############
+    ######################## if will run the function so delete 17 line! ###########
+    def begin():
+    print('--------Python study note---------')
+    print("Question: 1,2......")
+    print("YES=1, False=2")
+    p= int(input("Pick a question: "))
+    return p
+def one():
+    temp = input("Does return function return the value?")
+    guess = int(temp)
+    if guess == 1:
+        print("right")
+        print("nice job")
+    else:
+        print("wrong")
+        print("study harder")
+def two():
+    t = input("map function works as (function apply on the value, value)")
+    g=int(t)
+    if g ==1:
+        print("right")
+        print("nice job")
+    else:
+        print("wrong")
+        print("study harder")
+i = True
+while i:
+    if begin()==1:
+        one()
+    elif begin()==2:
+        two()
+    
