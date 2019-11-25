@@ -1,0 +1,228 @@
+"""
+This is a program that allows a user to take an easy quiz with normal pick
+mode or random pick mode.
+__author__ = "Jie Zhou"
+"""
+import random  # import random function to allow to generate random number
+
+
+def one():
+    """
+    This function is for first question.
+    This function is the function that will give out a question at first
+    Then it will take the input, and give out a proper output determined by
+    the values
+
+    :return:
+    """
+    print("What is the 'road' for IP "
+          "transportation?\n1.IP\n2.TCP\n3.UDP\n4.network topology")
+    temp = input("Answer:")
+    guess = int(temp)
+    if guess == 4:
+        print("right")
+        print("nice job")
+    elif guess > 4 or guess < 1:
+        print("Please pick from 1 to 4.")
+    else:
+        print("wrong")
+        print("Try harder")
+
+
+def two():
+    """
+    This function is for second question.
+    This function is the function that will give out a question at first
+    Then it will take the input, and give out a proper output determined by
+    the values
+    :return:
+    """
+    print("What is the 'truck' for IP "
+          "transportation?\n1.IP\n2.DDP\n3.TCP\n4.Port")
+    t = input("Answer:")
+    g = int(t)
+    if g == 1:
+        print("right")
+        print("nice job")
+    elif g > 4 or g < 1:
+        print("Please pick from 1 to 4.")
+    else:
+        print("wrong")
+        print("study harder")
+
+
+def three():
+    """
+    This function is for third question.
+    This function is the function that will give out a question at first
+    Then it will take the input, and give out a proper output determined by
+    the values
+    :return:
+    """
+    print("What are hold in the 'box' during the IP "
+          "transportation?\n1.TCP only\n2.TCP,UDP\n3.UDP, UPP\n4.UDP,DSL")
+    t = input("Answer:")
+    g = int(t)
+    if g == 2:
+        print("right")
+        print("nice job")
+    elif g > 4 or g < 1:
+        print("Please pick from 1 to 4.")
+    else:
+        print("wrong")
+        print("study harder")
+
+
+def four():
+    """
+    This function is for fourth question.
+    This function is the function that will give out a question at first
+    Then it will take the input, and give out a proper output determined by
+    the values
+    :return:
+    """
+    print("Which layer does IP transportation take place"
+          "?\n1.1\n2.2\n3.3\n4.4")
+    t = input("Answer")
+    g = int(t)
+    if g == 4:
+        print("right")
+        print("nice job")
+    elif g > 4 or g < 1:
+        print("Please pick from 1 to 4.")
+    else:
+        print("wrong")
+        print("study harder")
+
+
+def five():
+    """
+    This function is for fifth question.
+    This function is the function that will give out a question at first
+    Then it will take the input, and give out a proper output determined by
+    the values
+    :return:
+    """
+    print("Which protocol is more reliable?\n1.UDP\n2.TCP")
+    t = input("Answer:")
+    g = int(t)
+    if g == 2:
+        print("right")
+        print("nice job")
+    elif g > 2 or g < 1:
+        print("Please pick from 1 to 4.")
+    else:
+        print("wrong")
+        print("study harder")
+
+
+def six():
+    """
+    This function is for sixth question.
+    This function is the function that will give out a question at first
+    Then it will take the input, and give out a proper output determined by
+    the values
+    :return:
+    """
+    print("Which layer does IP transportation take place"
+          "?\n1.1\n2.2\n3.3\n4.4")
+    t = input("Answer:")
+    g = int(t)
+    if g == 4:
+        print("right")
+        print("nice job")
+    elif g > 4 or g < 1:
+        print("Please pick from 1 to 4.")
+    else:
+        print("wrong")
+        print("study harder")
+
+
+def seven():
+    """
+    This function is for seventh question.
+    This function is the function that will give out a question at first
+    Then it will take the input, and give out a proper output determined by
+    the values
+    :return:
+    """
+    print("What is the 'room number' on the 'box' for IP "
+          "transportation?\n1.Port\n2.TCP2\n3.IPV43\n4.ICMP")
+    t = input("Answer:")
+    g = int(t)
+    if g == 1:
+        print("right")
+        print("nice job")
+    elif g > 4 or g < 1:
+        print("Please pick from 1 to 4.")
+    else:
+        print("wrong")
+        print("study harder")
+
+
+def main():
+    """
+    The main function is the function that gather all the question together
+    to form a loop that can be stopped by specific input value.
+    It also detects the input to point out the error and continue
+    :return:
+    """
+    i = True
+    while i:
+        print('^^^^^^^^^^Network Small Quiz^^^^^^^^^^')
+        print("----------------------")
+        print("1.road               "
+              "|\n2.truck              |"
+              "\n3.box                |\n4.layer              |"
+              "\n5.protocol           |\n6.layer              |\n7.room"
+              "number         |")
+        print("----------------------")
+        print("<<<<Enter 0 for random mode>>>>")
+        print("<<<<Enter 8 to end quiz in menu>>>>")
+        print("<<To Answer the Question:TRUE=1, False=2>>")
+        try:  # This part is used to detect input errors#
+            p = int(input("Pick a question or end the quiz: "))
+        except ValueError:
+            print("----------------------\nPlease put in "
+                  "numbers\n----------------------")
+            continue
+        if p == 1:
+            one()
+        if p == 2:
+            two()
+        if p == 3:
+            three()
+        if p == 4:
+            four()
+        if p == 5:
+            five()
+        if p == 6:
+            six()
+        if p == 7:
+            seven()
+        if p == 0:  # This is the random mode part, mainly depends on if loop.#
+            random_number = random.randint(1, 7)
+            if random_number == 1:
+                one()
+            if random_number == 2:
+                two()
+            if random_number == 3:
+                three()
+            if random_number == 4:
+                four()
+            if random_number == 5:
+                five()
+            if random_number == 6:
+                six()
+            if random_number == 7:
+                seven()
+        if p < 0 or p > 8:  # This one is used to detect other error that the
+            # try..except can not find.#
+            print("***Please choose from 0 to 8***")
+            print("***Other option will not work with this quiz***")
+        if p == 8:  # This is the part that end the program.#
+            print("***THANK YOU FOR TAKING THE QUIZ!!***")
+            break
+
+
+main()
